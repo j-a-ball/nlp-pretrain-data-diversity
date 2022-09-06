@@ -18,10 +18,10 @@ The following four metrics were successfully scaled to the entire [Common Crawl 
   4. "Word Embedding Diversity (WED)," or mean pairwise cosine distance (Palumbo et al., 2020)
     - first point-wise averaging of each document's BERT word vectors, then selecting docs with the greatest average cosine distance, computed pairwise between each doc and all other docs in the corpus
     
-The following two metrics were not successfully scaled to the entire corpus, eith due to being too inefficient or too memory-intensive at n > 700,000:
+The following two metrics were not successfully scaled to the entire corpus, either due to being too inefficient or too memory-intensive at n > 700,000:
 
-  5. Jaccard distance [scipy documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.jaccard.html)
-  6. Self-BLEU (Zhang et al., 2017; Alihosseini et al., 2019) [github repo](https://github.com/Danial-Alh/fast-bleu)
+  5. Jaccard distance ([scipy documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.jaccard.html))
+  6. Self-BLEU (Zhang et al., 2017; Alihosseini et al., 2019) ([github repo](https://github.com/Danial-Alh/fast-bleu))
     
 ## Experimental design:
 
