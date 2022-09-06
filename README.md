@@ -6,6 +6,7 @@ Thanks to Chris Potts and Aasavari Kakne for teaching support, and Douwe Kiela f
 
 ## Metrics 
 ([Palumbo et al., 2020](https://bit.ly/3cVfx3x); [Stasaski et al., 2020](https://aclanthology.org/2020.acl-main.446/))
+
 The following four metrics were successfully scaled to the entire [Common Crawl News corpus](https://huggingface.co/datasets/cc_news) of >700,000 English news articles:
 
   1. Mean-IDF (Baeza-Yates et al., 1999)
