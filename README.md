@@ -10,13 +10,13 @@ Thanks to Chris Potts and Aasavari Kakne for teaching support, and Douwe Kiela f
 The following four metrics were successfully scaled to the entire [Common Crawl News corpus](https://huggingface.co/datasets/cc_news) of >700,000 English news articles:
 
   1. Mean-IDF (Baeza-Yates et al., 1999)
-    - selecting documents for pretraining with the highest [tf-idf scores](https://en.wikipedia.org/wiki/Tf%E2%80%93idf), averaged over all terms in each document and computed using [scikit-learn's TfidfVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html)
+      - selecting documents for pretraining with the highest [tf-idf scores](https://en.wikipedia.org/wiki/Tf%E2%80%93idf), averaged over all terms in each document and computed using [scikit-learn's TfidfVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html)
   2. Trigram language model entropy
-    - selecting documents with the highest trigram entropy scores, computed for each document using [NLTK's Language Modeling Module](https://www.nltk.org/api/nltk.lm.html)
+     - selecting documents with the highest trigram entropy scores, computed for each document using [NLTK's Language Modeling Module](https://www.nltk.org/api/nltk.lm.html)
   3. "Outlier distance," or Euclidean distance from mean corpus vector (Stasaski et al., 2020; Larson et al., 2019)
-    - first point-wise averaging of each document's BERT word vectors, then selecting docs with greatest Euclidean distance from the average of all BERT word vectors in the corpus
+     - first point-wise averaging of each document's BERT word vectors, then selecting docs with greatest Euclidean distance from the average of all BERT word vectors in the corpus
   4. "Word Embedding Diversity (WED)," or mean pairwise cosine distance (Palumbo et al., 2020)
-    - first point-wise averaging of each document's BERT word vectors, then selecting docs with the greatest average cosine distance, computed pairwise between each doc and all other docs in the corpus
+     - first point-wise averaging of each document's BERT word vectors, then selecting docs with the greatest average cosine distance, computed pairwise between each doc and all other docs in the corpus
     
 The following two metrics were not successfully scaled to the entire corpus, either due to being too inefficient or too memory-intensive at n > 700,000:
 
