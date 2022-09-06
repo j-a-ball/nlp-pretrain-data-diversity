@@ -1,0 +1,9 @@
+datasets
+gcld3
+scipy
+tensorboardx
+tokenizers
+torch
+torchvision
+tqdm
+transformers
