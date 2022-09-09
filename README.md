@@ -7,7 +7,7 @@ Thanks to Chris Potts and Aasavari Kakne for teaching support, and Douwe Kiela f
 ## Metrics 
 ([Palumbo et al., 2020](https://bit.ly/3cVfx3x); [Stasaski et al., 2020](https://aclanthology.org/2020.acl-main.446/))
 
-The following four metrics were successfully scaled to the entire [Common Crawl News corpus](https://huggingface.co/datasets/cc_news) of >700,000 English news articles:
+The following four metrics were successfully scaled to a subset of the [Common Crawl News corpus](https://huggingface.co/datasets/cc_news) containing more than 700,000 English news articles:
 
   1. Mean-IDF (Baeza-Yates et al., 1999)
       - selecting documents for pretraining with the highest [tf-idf scores](https://en.wikipedia.org/wiki/Tf%E2%80%93idf), averaged over all terms in each document and computed using [scikit-learn's TfidfVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html)
