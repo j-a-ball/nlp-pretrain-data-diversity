@@ -23,7 +23,7 @@ The following two metrics were not successfully scaled to the entire corpus, eit
   5. Jaccard distance ([scipy documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.jaccard.html))
   6. Self-BLEU (Zhang et al., 2017; Alihosseini et al., 2019) ([github repo](https://github.com/Danial-Alh/fast-bleu))
   
-An additional, 7th diversity metric was proposed by [Lai et al., 2020](https://aclanthology.org/2020.lrec-1.215/), computed as the geometric average of standard deviations along each axis in the embedding space. Lai et al.'s paper is an excellent contribution, and I plan to reformulate this experiment to test only the metrics they propose.
+An additional, 7th diversity metric was proposed by [Lai et al., 2020](https://aclanthology.org/2020.lrec-1.215/), computed as the geometric average of standard deviations along each axis in an embedding space for any number of documents. Lai et al.'s paper is an excellent contribution, and I plan to reformulate this experiment to test only the metrics they propose.
     
 ## Experimental design:
 
