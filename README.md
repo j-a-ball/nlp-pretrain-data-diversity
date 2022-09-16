@@ -33,6 +33,10 @@ An additional, 7th diversity metric was proposed by [Lai et al., 2020](https://a
   
 ## Results:
 
-  The separately trained language models did not vary significantly in their finetuned SQuAD performance. Put differently, the additional 10,000 news articles did not provide enough opportunity for the models to learn different behavior. This suggests that the impacts of dataset diversity would only be felt (a) when data are few, which is not normally the case for pretraining, or (b) when the diversity-selected dataset is significantly larger than a mere 10,000 short news articles.
+  The separately trained BERT language models did not vary significantly in their finetuned SQuAD performance. The model pretrained on articles selected according to trigram language model entropy performed best, although this finding is probably not significant. It seems that the additional 10,000 news articles did not provide enough opportunity for the models to learn different behavior. This suggests that the impacts of dataset diversity would only be felt (a) when data are few, which is not normally the case for pretraining, or (b) when the diversity-selected dataset is a couple orders of magnitude larger than a mere 10,000 short news articles.
+  
+  Two heuristics developed from this project:
+    1. Pretrain datasets for NLP models at the scale of BERT should consist of 100M words or more.
+    2. Simpler language models, such as trigram language models, are well suited to the task of selecting data inputs for more complex language models.
 
 Please reach out to me at {jonball -at- stanford -dot- edu} if you would like to try scaling up this project!
