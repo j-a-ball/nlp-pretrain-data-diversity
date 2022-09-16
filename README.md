@@ -37,7 +37,7 @@ An additional, 7th diversity metric was proposed by [Lai et al., 2020](https://a
   
   Two heuristics developed from this project:
   
-    1. Pretrain datasets for NLP models at the scale of BERT should consist of 100M words or more.
-    2. Simpler language models, such as trigram language models, are well suited to the task of selecting data inputs for more complex language models.
+  1. Pretrain datasets for NLP models at the scale of BERT should consist of 100M words or more.
+  2. Simpler language models, such as trigram language models, are well suited to the task of selecting data inputs for more complex language models.
 
 Please reach out to me at {jonball -at- stanford -dot- edu} if you would like to try scaling up this project!
